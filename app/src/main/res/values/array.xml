@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="array_month">
+        <item>@string/month_1</item>
+        <item>@string/month_2</item>
+        <item>@string/month_3</item>
+        <item>@string/month_4</item>
+        <item>@string/month_5</item>
+        <item>@string/month_6</item>
+        <item>@string/month_7</item>
+        <item>@string/month_8</item>
+        <item>@string/month_9</item>
+        <item>@string/month_10</item>
+        <item>@string/month_11</item>
+        <item>@string/month_12</item>
+    </array>
+
+    <array name="array_day">
+        <item>@string/day_1</item>
+        <item>@string/day_2</item>
+        <item>@string/day_3</item>
+        <item>@string/day_4</item>
+        <item>@string/day_5</item>
+        <item>@string/day_6</item>
+        <item>@string/day_7</item>
+    </array>
+
+    <array name="array_day_small">
+        <item>@string/day_small_1</item>
+        <item>@string/day_small_2</item>
+        <item>@string/day_small_3</item>
+        <item>@string/day_small_4</item>
+        <item>@string/day_small_5</item>
+        <item>@string/day_small_6</item>
+        <item>@string/day_small_7</item>
+    </array>
+
+    <array name="array_color_day_of_week">
+        <item>@color/colorSunDay</item>
+        <item>@color/colorMonday</item>
+        <item>@color/colorTuesday</item>
+        <item>@color/colorWednesday</item>
+        <item>@color/colorThursday</item>
+        <item>@color/colorFriday</item>
+        <item>@color/colorSaturday</item>
+    </array>
+
+
+</resources>

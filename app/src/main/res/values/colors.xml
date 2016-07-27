@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212629</color>
+    <color name="colorPrimaryDark">#000000</color>
+
+    <color name="colorTextGrey">#6a7072</color>
+
+    <color name="colorPrimaryBackground">#394446</color>
+
+    <color name="colorPrimaryBackground_second">#546464</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_description">#d6d6d6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent_second">#ff86af</color>
+
+    <color name="colorSunDay">#ff3713</color>
+    <color name="colorMonday">#ffdd13</color>
+    <color name="colorTuesday">#ff72c0</color>
+    <color name="colorWednesday">#11ff09</color>
+    <color name="colorThursday">#ffb400</color>
+    <color name="colorFriday">#0f5cff</color>
+    <color name="colorSaturday">#ff0fdd</color>
+
+
+    <!-- THEME DARK-->
+    <color name="theme_dark_text">#ffffff</color>
+    <color name="theme_dark_text_description">#d6d6d6</color>
+    <color name="theme_dark_background">#546464</color>
+    <color name="theme_dark_month_background">#212629</color>
+
+    <!-- THEME LIGHT-->
+    <color name="theme_light_text">#252525</color>
+    <color name="theme_light_text_description">#585858</color>
+    <color name="theme_light_background">#ffffff</color>
+    <color name="theme_light_month_background">#d9d9d9</color>
+
+    <color name="colorCircleToday">#0f5cff</color>
+</resources>
