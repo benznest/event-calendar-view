@@ -1,4 +1,4 @@
-package com.benzneststudios.library.eventcalendarstory;
+package com.benzneststudios.library.eventcalendar;
 
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -10,17 +10,14 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.benzneststudios.library.eventcalendarstory.Util.CalendarUtils;
-import com.benzneststudios.library.eventcalendarstory.fragment.CalendarFragment;
-import com.benzneststudios.library.eventcalendarstory.fragment.MainFragment;
-import com.benzneststudios.library.eventcalendarstory.model.EventMonth;
-import com.benzneststudios.library.eventcalendarstory.view.ListMyEvent;
+import com.benzneststudios.library.eventcalendar.fragment.CalendarFragment;
+import com.benzneststudios.library.eventcalendar.fragment.MainFragment;
+import com.benzneststudios.library.eventcalendar.model.EventMonth;
+import com.benzneststudios.library.eventcalendar.view.ListMyEventView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
-    boolean flagOpeningCalendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,13 +52,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void toggleCalendar() {
-        ArrayList<EventMonth> listEventMonth = ListMyEvent.getSampleData();
+        ArrayList<EventMonth> listEventMonth = ListMyEventView.getSampleData();
         CalendarFragment.setTheme(CalendarFragment.THEME_LIGHT);
-
-        CalendarFragment.setBackgroundHeaderMonthCalendar(ContextCompat.getColor(MainActivity.this , R.color.colorAccent));
-        CalendarFragment.setBackgroundHeaderDayCalendar(ContextCompat.getColor(MainActivity.this , R.color.colorAccent_second));
-
+        CalendarFragment.setBackgroundHeaderMonthCalendar(ContextCompat.getColor(MainActivity.this , R.color.colorThursday));
+        CalendarFragment.setBackgroundHeaderDayCalendar(ContextCompat.getColor(MainActivity.this , R.color.colorFriday));
         CalendarFragment.setTextMonthColor(ContextCompat.getColor(MainActivity.this , R.color.white));
+        CalendarFragment.setCircleTodayHighlightColor(ContextCompat.getColor(MainActivity.this , R.color.colorFriday));
+        CalendarFragment.setTextDayHeaderColor(ContextCompat.getColor(MainActivity.this , R.color.colorAccent));
+
 
         CalendarFragment.setOnClickDayCalendar(new View.OnClickListener() {
             @Override
@@ -70,10 +68,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         CalendarFragment.toggleCalendar(MainActivity.this , R.id.content_container , listEventMonth);
-
-
     }
 
 
