@@ -2,12 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.benzneststudios.library.eventcalendarstory.fragment.MainFragment">
+    tools:context="com.benzneststudios.library.eventcalendar.fragment.MainFragment">
 
-    <com.benzneststudios.library.eventcalendarstory.view.ListMyEvent
+    <com.benzneststudios.library.eventcalendar.view.ListMyEventView
         android:id="@+id/listView_my_event"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </com.benzneststudios.library.eventcalendarstory.view.ListMyEvent>
+    </com.benzneststudios.library.eventcalendar.view.ListMyEventView>
 
 </FrameLayout>

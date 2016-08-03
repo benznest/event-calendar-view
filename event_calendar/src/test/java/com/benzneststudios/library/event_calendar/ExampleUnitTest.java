@@ -1,4 +1,4 @@
-package com.benzneststudios.library.eventcalendarstory;
+package com.benzneststudios.library.eventcalendar;
 
 import org.junit.Test;
 
