@@ -45,30 +45,35 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_calendar:
-               toggleCalendar();
+                toggleCalendar();
                 return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
     private void toggleCalendar() {
-        ArrayList<EventMonth> listEventMonth = ListMyEventView.getSampleData();
+        final ArrayList<EventMonth> listEventMonth = ListMyEventView.getSampleData();
         CalendarFragment.setTheme(CalendarFragment.THEME_LIGHT);
-        CalendarFragment.setBackgroundHeaderMonthCalendar(ContextCompat.getColor(MainActivity.this , R.color.colorThursday));
-        CalendarFragment.setBackgroundHeaderDayCalendar(ContextCompat.getColor(MainActivity.this , R.color.colorFriday));
-        CalendarFragment.setTextMonthColor(ContextCompat.getColor(MainActivity.this , R.color.white));
-        CalendarFragment.setCircleTodayHighlightColor(ContextCompat.getColor(MainActivity.this , R.color.colorFriday));
-        CalendarFragment.setTextDayHeaderColor(ContextCompat.getColor(MainActivity.this , R.color.colorAccent));
+        CalendarFragment.setBackgroundHeaderMonthCalendar(ContextCompat.getColor(MainActivity.this, R.color.colorThursday));
+        CalendarFragment.setBackgroundHeaderDayCalendar(ContextCompat.getColor(MainActivity.this, R.color.colorFriday));
+        CalendarFragment.setTextMonthColor(ContextCompat.getColor(MainActivity.this, R.color.white));
+        CalendarFragment.setCircleTodayHighlightColor(ContextCompat.getColor(MainActivity.this, R.color.colorFriday));
+        CalendarFragment.setTextDayHeaderColor(ContextCompat.getColor(MainActivity.this, R.color.colorAccent));
 
 
         CalendarFragment.setOnClickDayCalendar(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"EVENT_ID = "+v.getTag(CalendarFragment.KEY_EVENT_ID),Toast.LENGTH_SHORT).show();
+                listEventMonth.add(new EventMonth((int) v.getTag(CalendarFragment.KEY_MONTH), (int) v.getTag(CalendarFragment.KEY_YEAR)));
+                CalendarFragment.close(MainActivity.this);
+                CalendarFragment.toggleCalendar(MainActivity.this,
+                        R.id.content_container,
+                        listEventMonth);
+                Toast.makeText(MainActivity.this, "EVENT_ID = " + v.getTag(CalendarFragment.KEY_EVENT_ID), Toast.LENGTH_SHORT).show();
             }
         });
 
-        CalendarFragment.toggleCalendar(MainActivity.this , R.id.content_container , listEventMonth);
+        CalendarFragment.toggleCalendar(MainActivity.this, R.id.content_container, listEventMonth);
     }
 
 

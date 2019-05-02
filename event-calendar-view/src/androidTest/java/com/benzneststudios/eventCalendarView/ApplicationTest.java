@@ -1,4 +1,4 @@
-package com.benzneststudios.library.eventcalendarstory;
+package com.benzneststudios.eventCalendarView;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

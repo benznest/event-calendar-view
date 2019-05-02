@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Event Calendar Library</string>
+
+    <string name="month_1">January</string>
+    <string name="month_2">February</string>
+    <string name="month_3">March</string>
+    <string name="month_4">April</string>
+    <string name="month_5">May</string>
+    <string name="month_6">June</string>
+    <string name="month_7">July</string>
+    <string name="month_8">August</string>
+    <string name="month_9">September</string>
+    <string name="month_10">October</string>
+    <string name="month_11">November</string>
+    <string name="month_12">December</string>
+
+    <string name="day_1">Sunday</string>
+    <string name="day_2">Monday</string>
+    <string name="day_3">Tuesday</string>
+    <string name="day_4">Wednesday</string>
+    <string name="day_5">Thursday</string>
+    <string name="day_6">Friday</string>
+    <string name="day_7">Saturday</string>
+
+
+    <string name="day_small_1">Sun</string>
+    <string name="day_small_2">Mon</string>
+    <string name="day_small_3">Tu</string>
+    <string name="day_small_4">Wed</string>
+    <string name="day_small_5">Thu</string>
+    <string name="day_small_6">Fri</string>
+    <string name="day_small_7">Sat</string>
+
+    <string name="key_title">key_title</string>
+    <string name="key_event_id">key_event_id</string>
+    <string name="key_description">key_description</string>
+    <string name="key_time">key_time</string>
+    <string name="key_day">key_day</string>
+    <string name="key_day_of_week">key_day_of_week</string>
+    <string name="key_month">key_month</string>
+    <string name="key_year">key_year</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
